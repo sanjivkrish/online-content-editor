@@ -1,5 +1,6 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import PropTypes from 'prop-types'
 
 import './styles.css';
 
@@ -13,6 +14,10 @@ const Header = props => {
             </Toolbar>
         </AppBar>
     )
+}
+
+Header.propTypes = {
+    title : PropTypes.string.isRequired
 }
 
 export default Header
